@@ -67,7 +67,7 @@ namespace Marketplace.UnturnedModule
             {
                 using (WebClient wc = new WebClient())
                 {
-                    content = wc.DownloadString(UnturnedMarketplaceModule.Instance.Config.ApiUrl + "/unturneditems?onlyIds=true&withNoIcons=true");
+                    content = wc.DownloadString(UnturnedMarketplaceModule.Instance.Config.ApiUrl + "/unturneditems?haveNoIcons=true");
                 }
             }
             catch (WebException e)
